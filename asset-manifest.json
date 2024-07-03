@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/corwins-calculator/static/css/main.c6ef1b80.css",
+    "main.js": "/corwins-calculator/static/js/main.0b8187bd.js",
+    "static/js/453.92889dae.chunk.js": "/corwins-calculator/static/js/453.92889dae.chunk.js",
+    "index.html": "/corwins-calculator/index.html",
+    "main.c6ef1b80.css.map": "/corwins-calculator/static/css/main.c6ef1b80.css.map",
+    "main.0b8187bd.js.map": "/corwins-calculator/static/js/main.0b8187bd.js.map",
+    "453.92889dae.chunk.js.map": "/corwins-calculator/static/js/453.92889dae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6ef1b80.css",
+    "static/js/main.0b8187bd.js"
+  ]
+}
