@@ -1,5 +1,6 @@
 {
   "name": "calculator-app",
+  "homepage": "https://ckwlee.github.io/corwins-calculator/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
