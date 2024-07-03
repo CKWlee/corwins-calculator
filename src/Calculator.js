@@ -19,7 +19,8 @@ const Calculator = () => {
 
     const handleCalculate = () => {
         try {
-            const result = eval(input).toString();
+            const calculate = new Function('return ' + input);
+            const result = calculate().toString();
             setInput(result);
             setHistory(prevHistory => [...prevHistory, { input, result }]);
         } catch (error) {
