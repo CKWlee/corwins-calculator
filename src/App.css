@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* Optional background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
+  background-color: #333;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator-screen {
+  background-color: #222;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator-screen input {
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: inherit;
+  width: 100%;
+  text-align: right;
+  outline: none;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjusted grid columns for keys */
+  gap: 10px;
+}
+
+.calculator-keys button {
+  font-size: 1.5rem;
+  padding: 15px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculator-keys button:hover {
+  background-color: #777;
+}
+
+.calculator-keys button:active {
+  transform: scale(0.95);
+}
+
+.all-clear,
+.equal-sign {
+  grid-column: span 2; /* Span two columns for these buttons */
+  background-color: #4caf50;
+}
+
+.backspace {
+  background-color: #999;
+}
+
+.backspace:hover {
+  background-color: #bbb;
+}
+
+.history {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #444;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.history h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
